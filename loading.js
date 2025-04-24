@@ -3,7 +3,14 @@ const button = document.getElementById('buttoncli');
 const outputcli = document.getElementById('outputcli');
 
 // Add a click event listener to the button
-button.addEventListener('click', async () => {
+button.addEventListener('click', handleClick);
+document.getElementById('inputcli').addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        handleClick();
+    }
+});
+
+async function handleClick() {
     // Get the text from an input field
     const inputText = document.getElementById('inputcli').value;
 
@@ -49,4 +56,4 @@ button.addEventListener('click', async () => {
 
     // Change the text content of the h1 element
     outputcli.textContent = `Hash: ${hashHex}\nJoke: ${randomJoke}`;
-});
+}
