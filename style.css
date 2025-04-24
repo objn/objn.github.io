@@ -1,0 +1,77 @@
+@keyframes backgroundColorChange {
+    0% {
+        background-color: rgb(28, 28, 28);
+    }
+    50% {
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        background-color: rgb(28, 28, 28);
+    }
+
+}
+
+@keyframes buttonColorChange {
+    0% {
+        background-color: rgb(48, 48, 48);
+    }
+    50% {
+        background-color: rgb(18, 18, 18);
+    }
+    100% {
+        background-color: rgb(48, 48, 48);
+    }
+
+}
+
+body {
+    animation: backgroundColorChange 8s infinite ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 20px;
+    animation: backgroundColorChange 8s infinite ease-in-out;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    font-size: 1.2em;
+    padding: 5px;
+    margin-top: 20px;
+    border: 0px;
+    color: white;
+    animation: backgroundColorChange 8s infinite ease-in-out;
+    outline: none; /* This disables the orange border on focus */
+}
+
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(18, 18, 18);
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    animation: buttonColorChange 8s infinite ease-in-out;
+}
+
+h4 {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2em;
+}
